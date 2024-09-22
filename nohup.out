@@ -3237,3 +3237,2275 @@ Traceback (most recent call last):
   File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
     result = await future
 telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+./nub.sh: line 32: 352155 Killed                  nohup python3 main.py
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Unhandled exception on reboot_handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 138, in reboot_handler
+    sys.exit(0)  # Raise a system exit exception to stop the entire code
+NameError: name 'sys' is not defined
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+./nub.sh: line 32: 369398 Killed                  nohup python3 main.py
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 224, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Server closed the connection: [Errno 104] Connection reset by peer
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 209, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on reboot_handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 138, in reboot_handler
+    if user_id in admin_ids:
+NameError: name 'sys' is not defined
+./nub.sh: line 32: 371252 Killed                  nohup python3 main.py
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 212, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+started
+True
+True
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+started
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 238, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 238, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 223, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 238, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 223, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 223, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+started
+True
+True
+True
+True
+True
+True
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 223, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 223, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 223, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 223, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+started
+True
+True
+True
+True
+True
+True
+True
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Unhandled exception on on_bot_added
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 66, in on_bot_added
+    await event.respond(response)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/events/chataction.py", line 230, in respond
+    return await self._client.send_message(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/messages.py", line 905, in send_message
+    result = await self(request)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.ChannelPrivateError: The channel specified is private and you lack permission to access it. Another reason may be that you were banned from it (caused by SendMessageRequest)
+Unhandled exception on on_bot_added
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 66, in on_bot_added
+    await event.respond(response)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/events/chataction.py", line 230, in respond
+    return await self._client.send_message(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/messages.py", line 905, in send_message
+    result = await self(request)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.ChannelPrivateError: The channel specified is private and you lack permission to access it. Another reason may be that you were banned from it (caused by SendMessageRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 238, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 238, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+started
+True
+True
+True
+True
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/main.py", line 50, in <module>
+    @bot.on(events.ChatAction(func=lambda e: not e.is_private), filters.ChatType(Group))
+NameError: name 'filters' is not defined. Did you mean: 'filter'?
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/main.py", line 50, in <module>
+    @bot.on(events.ChatAction(func=lambda e: not e.is_private), filters.ChatType(Group))
+NameError: name 'filters' is not defined. Did you mean: 'filter'?
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/main.py", line 50, in <module>
+    @bot.on(events.ChatAction(func=lambda e: not e.is_private), filters.ChatType(Group))
+NameError: name 'filters' is not defined. Did you mean: 'filter'?
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/main.py", line 50, in <module>
+    @bot.on(events.ChatAction(func=lambda e: not e.is_private), filters.ChatType(Group))
+NameError: name 'filters' is not defined. Did you mean: 'filter'?
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/main.py", line 50, in <module>
+    @bot.on(events.ChatAction(func=lambda e: not e.is_private), filters.ChatType(Group))
+NameError: name 'filters' is not defined. Did you mean: 'filter'?
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/main.py", line 19, in <module>
+    bot = TelegramClient(None, api_id, api_hash).start(bot_token=bot_token)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 128, in start
+    else self.loop.run_until_complete(coro)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 177, in _start
+    await self.sign_in(bot_token=bot_token)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 357, in sign_in
+    result = await self(request)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.FloodWaitError: A wait of 1236 seconds is required (caused by ImportBotAuthorizationRequest)
+./nub.sh: line 32: 374378 Segmentation fault      (core dumped) nohup python3 main.py
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/main.py", line 19, in <module>
+    bot = TelegramClient(None, api_id, api_hash).start(bot_token=bot_token)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 128, in start
+    else self.loop.run_until_complete(coro)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 177, in _start
+    await self.sign_in(bot_token=bot_token)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 357, in sign_in
+    result = await self(request)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.FloodWaitError: A wait of 1174 seconds is required (caused by ImportBotAuthorizationRequest)
+./nub.sh: line 32: 374412 Segmentation fault      (core dumped) nohup python3 main.py
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/main.py", line 19, in <module>
+    bot = TelegramClient(None, api_id, api_hash).start(bot_token=bot_token)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 128, in start
+    else self.loop.run_until_complete(coro)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 177, in _start
+    await self.sign_in(bot_token=bot_token)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 357, in sign_in
+    result = await self(request)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.FloodWaitError: A wait of 1111 seconds is required (caused by ImportBotAuthorizationRequest)
+./nub.sh: line 32: 374448 Segmentation fault      (core dumped) nohup python3 main.py
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/main.py", line 19, in <module>
+    bot = TelegramClient(None, api_id, api_hash).start(bot_token=bot_token)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 128, in start
+    else self.loop.run_until_complete(coro)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 177, in _start
+    await self.sign_in(bot_token=bot_token)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 357, in sign_in
+    result = await self(request)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.FloodWaitError: A wait of 1048 seconds is required (caused by ImportBotAuthorizationRequest)
+./nub.sh: line 32: 374482 Segmentation fault      (core dumped) nohup python3 main.py
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+started
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+started
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+started
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+started
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+started
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/main.py", line 19, in <module>
+    bot = TelegramClient(None, api_id, api_hash).start(bot_token=bot_token)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 128, in start
+    else self.loop.run_until_complete(coro)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 177, in _start
+    await self.sign_in(bot_token=bot_token)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 357, in sign_in
+    result = await self(request)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.FloodWaitError: A wait of 74 seconds is required (caused by ImportBotAuthorizationRequest)
+./nub.sh: line 32: 374841 Segmentation fault      (core dumped) nohup python3 main.py
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 236, in handler
+    # Check if the sender is in the channel
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 236, in handler
+    # Check if the sender is in the channel
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 221, in handler
+    # Fetch user info to check if they are an admin
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 236, in handler
+    # Check if the sender is in the channel
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+started
+True
+True
+True
+True
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 240, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+started
+True
+True
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+started
+True
+True
+True
+True
+True
+True
+True
+True
+True
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 240, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=2185330287) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Server closed the connection: [Errno 104] Connection reset by peer
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 225, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 225, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+started
+True
+True
+True
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 240, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=2185330287) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 225, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 225, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 225, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 225, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 225, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 225, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 225, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 240, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=2185330287) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+started
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 240, in handler
+    try:
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 240, in handler
+    try:
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=2185330287) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 240, in handler
+    try:
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=2185330287) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 240, in handler
+    try:
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=2185330287) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 225, in handler
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 240, in handler
+    try:
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=2185330287) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 240, in handler
+    try:
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=2185330287) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 240, in handler
+    try:
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=2185330287) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+started
+True
+True
+True
+True
+True
+True
+True
+True
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 242, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=2185330287) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+started
+True
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 244, in handler
+    await bot.get_permissions(channel_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1224, in get_permissions
+    entity = await self.get_entity(entity)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 292, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 468, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerUser(user_id=1806807672) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+started
+entered
+cobverted
+True
+entered
+cobverted
+True
+True
+True
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 229, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+started
+True
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+  File "/home/ubuntu/nub/main.py", line 184
+    (`channel_info.full_chat.about`)
+     ^
+SyntaxError: f-string: invalid syntax
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 229, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 229, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 229, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+started
+True
+True
+True
+True
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/main.py", line 56, in <module>
+    @bot.on(events.ChatAction(func=lambda e: not e.is_private))
+NameError: name 'bot' is not defined
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+started
+True
+True
+True
+entered
+cobverted
+True
+entered
+cobverted
+True
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Unhandled exception on handler
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/nub/main.py", line 239, in handler
+    user_permissions = await bot.get_permissions(group_id, user_id)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/chats.py", line 1238, in get_permissions
+    participant = await self(functions.channels.GetParticipantRequest(
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.UserNotParticipantError: The target user is not a member of the specified megagroup or channel (caused by GetParticipantRequest)
+started
+True
+True
+True
+True
+True
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (24.2)
+Requirement already satisfied: certifi in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2024.8.30)
+Requirement already satisfied: telethon in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.36.0)
+Requirement already satisfied: pymongo in ./venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (4.8.0)
+Requirement already satisfied: pyaes in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (1.6.1)
+Requirement already satisfied: rsa in ./venv/lib/python3.10/site-packages (from telethon->-r requirements.txt (line 2)) (4.9)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./venv/lib/python3.10/site-packages (from pymongo->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.10/site-packages (from rsa->telethon->-r requirements.txt (line 2)) (0.6.1)
+Starting zipper.py...
+Traceback (most recent call last):
+  File "/home/ubuntu/nub/main.py", line 18, in <module>
+    bot = TelegramClient(None, api_id, api_hash).start(bot_token=bot_token)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 128, in start
+    else self.loop.run_until_complete(coro)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 177, in _start
+    await self.sign_in(bot_token=bot_token)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/auth.py", line 357, in sign_in
+    result = await self(request)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/home/ubuntu/nub/venv/lib/python3.10/site-packages/telethon/client/users.py", line 87, in _call
+    result = await future
+telethon.errors.rpcerrorlist.FloodWaitError: A wait of 159 seconds is required (caused by ImportBotAuthorizationRequest)

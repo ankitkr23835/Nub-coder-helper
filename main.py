@@ -1,5 +1,6 @@
 import telethon
 import pymongo
+import sys
 import os
 import certifi
 from telethon import TelegramClient, events, Button
@@ -14,8 +15,14 @@ collection = db["groups"]
 from config import *
 # API details
 ggg=os.getcwd()
-# Create the bot client
 bot = TelegramClient(None, api_id, api_hash).start(bot_token=bot_token)
+# Create the bot client
+def is_channel_duplicate(new_channel_id, existing_channel_ids):
+    new_channel_suffix = str(new_channel_id)[-8:]
+    for channel_id in existing_channel_ids:
+        if str(channel_id)[-8:] == new_channel_suffix:
+            return True
+    return False
 
 # Check if the bot has necessary permissions in the group and channel
 async def check_permissions(event, group_id, new_channel_id):
@@ -37,19 +44,36 @@ async def check_permissions(event, group_id, new_channel_id):
     channel = await bot.get_entity(new_channel_id)
     channel_title= channel.title
     await event.respond(
-        f"Channel '{channel_title}' added to the bot. Now every member's messages (excluding admins) "
-        f"will be deleted if they are not part of the channel."
+        f"Channel '{channel_title}' added to the bot.\nNow every member's messages (excluding admins) "
+        f"will be deleted if they are not part of the channel.\n\n"
+        f"join @nub_coder_s for more updates"
     )
     return True
 
 # Command to set the channel ID (/pr <channel_id>)
 from telethon.errors import UsernameNotOccupiedError, InviteHashExpiredError, InviteHashInvalidError
 import re
+# Handler to detect when the bot is added to a new group
+@bot.on(events.ChatAction(func=lambda e: not e.is_private))
 async def on_bot_added(event):
-    if event.user_added or event.user_joined:
-        # Check if the bot was added to the group
-        if event.user_id == bot._self_id:
-           await start_handler(event)
+    print(event)
+    if event.user_id == bot._self_id:
+        if isinstance(event.original_update, telethon.tl.types.UpdateChannelParticipant):
+            if isinstance(event.original_update.new_participant, telethon.tl.types.ChannelParticipantSelf):
+                # Send the start message listing all commands when bot is added to a group
+               response = (
+        "**Bot Commands and Usage**\n\n"
+        "1. **/start** - Displays this help message with all commands and their usage.\n\n"
+        "2. **/pr <channel_id|@username|invite_link>** - Add a channel to the group where the bot will check if users are part of the channel. Accepts numeric channel IDs, usernames (with @), or invite links.\n"
+        "- Usage: `/pr 123456789` or `/pr @channelusername` or `/pr https://t.me/joinchat/abc123`\n\n"
+        "3. **/prs** - List all channels currently set for the group.\n"
+        "- Usage: `/prs`\n\n"
+        "4. **/rm <channel_id>** - Remove a specific channel from the group's list.\nCheck /prs for channel id\n"
+        "- Usage: `/rm 123456789`\n\n"
+        "join @nub_coder_s for more updates"
+    )
+
+               await event.respond(response)
 # Command to show all available commands and their usage
 @bot.on(events.NewMessage(pattern='/start', incoming=True))
 async def start_handler(event):
@@ -57,11 +81,12 @@ async def start_handler(event):
         "**Bot Commands and Usage**\n\n"
         "1. **/start** - Displays this help message with all commands and their usage.\n\n"
         "2. **/pr <channel_id|@username|invite_link>** - Add a channel to the group where the bot will check if users are part of the channel. Accepts numeric channel IDs, usernames (with @), or invite links.\n"
-        "   - Usage: `/pr 123456789` or `/pr @channelusername` or `/pr https://t.me/joinchat/abc123`\n\n"
+        "- Usage: `/pr 123456789` or `/pr @channelusername` or `/pr https://t.me/joinchat/abc123`\n\n"
         "3. **/prs** - List all channels currently set for the group.\n"
-        "   - Usage: `/prs`\n\n"
+        "- Usage: `/prs`\n\n"
         "4. **/rm <channel_id>** - Remove a specific channel from the group's list.\nCheck /prs for channel id\n"
-        "   - Usage: `/rm 123456789`\n\n"
+        "- Usage: `/rm 123456789`\n\n"
+        "join @nub_coder_s for more updates"
     )
 
     await event.respond(response)
@@ -83,9 +108,11 @@ async def set_channel(event):
     channel_input = event.pattern_match.group(1).strip()
 
     try:
-        if channel_input.isdigit():
+        if channel_input.isdigit() or channel_input.startswith('-'):
             # If it's a numeric ID, convert to int
+            print('entered')
             new_channel_id = int(channel_input)
+            print('cobverted')
             channel_entity = await bot.get_entity(PeerChannel(new_channel_id))
 
         elif re.match(r'^@[\w\d_]+$', channel_input):
@@ -103,8 +130,12 @@ async def set_channel(event):
         else:
             await event.respond("Invalid format. Please provide a valid channel ID, username, or invite link.")
             return
-
+        group_data = collection.find_one({"group_id": group_id})
+        existing_channels = group_data.get("channels", []) if group_data else []
         # Run permission checks
+        if is_channel_duplicate(new_channel_id, existing_channels):
+            await event.respond(f"Channel with similar ID already added. Duplicate channel: {new_channel_id}")
+            return
         success = await check_permissions(event, group_id, new_channel_id)
 
         if success:
@@ -114,7 +145,6 @@ async def set_channel(event):
                 {"$addToSet": {"channels": new_channel_id}},
                 upsert=True
             )
-            await event.respond(f"Channel '{channel_entity.title}' added successfully.")
 
     except (UsernameNotOccupiedError, ValueError):
         await event.respond("Invalid channel username or ID.")
@@ -159,11 +189,11 @@ async def list_channels(event):
     response = "Channels added to this group:\n\n"
     for channel_id in channels:
         try:
-            channel_entity = await bot.get_entity(PeerChannel(channel_id))
-            channel_info = await bot(GetFullChannelRequest(channel=channel_entity))
-            response += f"• Channel Title: {channel_info.full_chat.about} (ID: {channel_id})\n"
+            channel = await bot.get_entity(channel_id)
+            channel_title= channel.title
+            response += f"• Channel Title: **{channel_title}** (ID: `{channel_id}`)\n"
         except Exception as e:
-            response += f"• Failed to get details for Channel ID: {channel_id} (Error: {str(e)})\n"
+            response += f"• Failed to get details for Channel ID: `{channel_id}` (Error: {str(e)})\n"
 
     await event.respond(response)
 
@@ -189,7 +219,7 @@ async def remove_channel(event):
         {"$pull": {"channels": channel_id_to_remove}}
     )
 
-    await event.respond(f"Channel ID {channel_id_to_remove} has been removed from the bot.")
+    await event.respond(f"Channel ID `{channel_id_to_remove}` has been removed from the bot.")
 
 # Event handler for new messages in the group
 @bot.on(events.NewMessage(incoming=True, func=lambda e: not e.is_private))
@@ -239,7 +269,7 @@ async def handler(event):
             except ChatAdminRequiredError:
                 # If bot can't check the channel, remove that channel from the group
                 collection.update_one({"group_id": group_id}, {"$pull": {"channels": channel_id}})
-                await event.respond(f"Bot lost permission to check channel {channel_id}. It has been removed from the list.")
+                await event.respond(f"Bot lost permission to check channel `{channel_id}`. It has been removed from the list.")
                 break
 
 # Start the bot
