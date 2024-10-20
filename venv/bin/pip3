@@ -1,4 +1,4 @@
-#!/home/ubuntu/nub/venv/bin/python3
+#!/home/ubuntu/Nub-coder-helper/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

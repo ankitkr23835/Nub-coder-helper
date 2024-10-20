@@ -1,8 +1,5 @@
 #!/bin/bash
 
-python3 -m venv venv
-source venv/bin/activate
-pip3 install --upgrade pip
 pip3 install -r requirements.txt
 #!/bin/bash
 
@@ -19,8 +16,6 @@ while true; do
         pid="${pids[$process_name]}"
 
         if [[ -z "$pid" ]] || ! kill -0 "$pid" 2>/dev/null; then
-            python3 -m venv venv
-            pip3 install --upgrade pip
             pip3 install -r requirements.txt
             echo "Starting $process_name..."
             eval "${processes[$process_name]}"

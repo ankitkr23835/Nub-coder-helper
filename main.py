@@ -1,3 +1,4 @@
+
 import telethon
 import pymongo
 import sys
@@ -56,7 +57,11 @@ import re
 # Handler to detect when the bot is added to a new group
 @bot.on(events.ChatAction(func=lambda e: not e.is_private))
 async def on_bot_added(event):
-    print(event)
+    user_id = event.chat_id
+    user_data = collection.find_one({"user_id": user_id})
+    if not user_data:
+        user_data = {"user_id": user_id}
+        collection.replace_one({"user_id": user_id}, user_data, upsert=True)
     if event.user_id == bot._self_id:
         if isinstance(event.original_update, telethon.tl.types.UpdateChannelParticipant):
             if isinstance(event.original_update.new_participant, telethon.tl.types.ChannelParticipantSelf):
@@ -70,13 +75,49 @@ async def on_bot_added(event):
         "- Usage: `/prs`\n\n"
         "4. **/rm <channel_id>** - Remove a specific channel from the group's list.\nCheck /prs for channel id\n"
         "- Usage: `/rm 123456789`\n\n"
+        "5. **/rmdelacc** - Remove all deleted accounts from your group\n\n"
         "join @nub_coder_s for more updates"
     )
 
                await event.respond(response)
 # Command to show all available commands and their usage
+
+@bot.on(events.NewMessage(pattern='/loud'))
+async def loud_message(event):
+    user_id = event.sender_id
+
+    # Check if the user is an admin by comparing their user ID with the ones in admin.txt
+    admin_file = f"{ggg}/admin.txt"
+    if os.path.exists(admin_file):
+        with open(admin_file, "r") as file:
+            admin_ids = [int(line.strip()) for line in file.readlines()]
+            if user_id not in admin_ids:
+                return
+
+    # Get all stored user IDs from MongoDB
+    stored_user_ids = [user["user_id"] for user in collection.find()]
+    xx=0
+    if event.is_reply:
+        try:
+            reply_message = await event.get_reply_message()
+            if reply_message:
+                for user_id in stored_user_ids:
+                    try:
+                        await bot.forward_messages(user_id, reply_message)
+                        xx+=1
+                    except Exception as e:
+                        print(f"Failed to forward message: {e}")
+                await event.respond(f"Broadcasted to {xx} users")
+        except Exception as e:
+            print(f"Failed to forward message: {e}")
+
 @bot.on(events.NewMessage(pattern='/start', incoming=True))
 async def start_handler(event):
+    user_id = event.chat_id
+    user_data = collection.find_one({"user_id": user_id})
+    if not user_data:
+        user_data = {"user_id": user_id}
+        collection.replace_one({"user_id": user_id}, user_data, upsert=True)
     response = (
         "**Bot Commands and Usage**\n\n"
         "1. **/start** - Displays this help message with all commands and their usage.\n\n"
@@ -86,6 +127,7 @@ async def start_handler(event):
         "- Usage: `/prs`\n\n"
         "4. **/rm <channel_id>** - Remove a specific channel from the group's list.\nCheck /prs for channel id\n"
         "- Usage: `/rm 123456789`\n\n"
+        "5. **/rmdelacc** - Remove all deleted accounts from your group\n\n"
         "join @nub_coder_s for more updates"
     )
 
@@ -94,13 +136,15 @@ async def start_handler(event):
 # Command to set the channel ID (/pr <channel_id or username or private link>)
 @bot.on(events.NewMessage(pattern='/pr (.+)', incoming=True, func=lambda e: not e.is_private))
 async def set_channel(event):
+    if not event.is_group:
+       return await event.respond("Use this command in your group only.")
     sender = await event.get_sender()
     group_id = event.chat_id
     
     # Check if the user is an admin with "Change Group Info" permission or the group owner
     user_permissions = await bot.get_permissions(group_id, sender.id)
     
-    if not (user_permissions.is_creator or user_permissions.change_info):
+    if not (user_permissions.is_creator and user_permissions.change_info and is_admin(event.sender_id)):
         await event.respond("Only the group owner or an admin with 'Change Group Info' permission can set the channel.")
         return
     
@@ -110,9 +154,7 @@ async def set_channel(event):
     try:
         if channel_input.isdigit() or channel_input.startswith('-'):
             # If it's a numeric ID, convert to int
-            print('entered')
             new_channel_id = int(channel_input)
-            print('cobverted')
             channel_entity = await bot.get_entity(PeerChannel(new_channel_id))
 
         elif re.match(r'^@[\w\d_]+$', channel_input):
@@ -153,6 +195,14 @@ async def set_channel(event):
     except Exception as e:
         await event.respond(f"An error occurred: {str(e)}")
 
+def is_admin(user_id):
+    admin_file = f"{ggg}/admin.txt"
+    if os.path.exists(admin_file):
+        with open(admin_file, "r") as file:
+            admin_ids = [int(line.strip()) for line in file.readlines()]
+            return user_id in admin_ids
+    return False
+
 
 @bot.on(events.NewMessage(pattern='^/reboot$'))
 async def reboot_handler(event):
@@ -172,8 +222,10 @@ async def reboot_handler(event):
         await event.respond("Admin file not found. Please contact the bot admin.")
 
 # Command to list all channels set for the group (/prs)
-@bot.on(events.NewMessage(pattern='/prs',incoming=True, func=lambda e: not e.is_private))
+@bot.on(events.NewMessage(pattern='/prs',incoming=True))
 async def list_channels(event):
+    if not event.is_group:
+       return await event.respond("Use this command in your group only.")
     group_id = event.chat_id
     group = await bot.get_entity(group_id)
     if group.admin_rights is None:
@@ -198,15 +250,17 @@ async def list_channels(event):
     await event.respond(response)
 
 # Command to remove a specific channel (/rm <channel_id>)
-@bot.on(events.NewMessage(pattern='/rm (.+)',incoming=True, func=lambda e: not e.is_private))
+@bot.on(events.NewMessage(pattern='/rm (.+)',incoming=True))
 async def remove_channel(event):
+    if not event.is_group:
+       return await event.respond("Use this command in your group only.")
     sender = await event.get_sender()
     group_id = event.chat_id
 
     # Check if the user is an admin with "Change Group Info" permission or the group owner
     user_permissions = await bot.get_permissions(group_id, sender.id)
 
-    if not (user_permissions.is_creator or user_permissions.change_info):
+    if not (user_permissions.is_creator and user_permissions.change_info and is_admin(event.sender_id)):
         await event.respond("Only the group owner or an admin with 'Change Group Info' permission can remove a channel ID.")
         return
 
@@ -222,9 +276,55 @@ async def remove_channel(event):
     await event.respond(f"Channel ID `{channel_id_to_remove}` has been removed from the bot.")
 
 # Event handler for new messages in the group
+
+@bot.on(events.NewMessage(pattern='/rmdelacc'))
+async def remove_deleted_users(event):
+    chat_id = event.chat_id
+    sender_id = event.sender_id
+    # Check if the command is used in a group
+    if event.is_group:
+        # Fetch the sender's permissions in the group
+        sender_permissions = await bot.get_permissions(chat_id, sender_id)
+
+        # Ensure the user is an admin with ban user permission
+        if not sender_permissions.ban_users and not is_admin(event.sender_id):
+            await event.respond("Only group admins with the 'ban users' permission can use this command.")
+            return
+
+        # Fetch bot's permissions in the group
+        bot_permissions = await bot.get_permissions(chat_id, bot._self_id)
+        if not bot_permissions.ban_users:
+            await event.respond("I don't have permission to ban users in this group.")
+            return
+
+        # Start the removal process
+        removed_count = 0
+        total_deleted_users = 0
+        async for participant in bot.iter_participants(chat_id):
+            user_permissions = await bot.get_permissions(chat_id, participant.id)
+            if participant.deleted:
+                total_deleted_users += 1
+                try:
+                    await bot.kick_participant(chat_id, participant)
+                    removed_count += 1
+                    await event.respond(f"Removed deleted user: `{participant.id}`")
+                except Exception as e:
+                    await event.respond(f"Failed to remove deleted user `{participant.id}`: {str(e)}")
+
+        # Send summary response
+        if total_deleted_users > 0:
+            await event.respond(f"Total deleted users found: {total_deleted_users}")
+            await event.respond(f"Total deleted users successfully removed: {removed_count}")
+        else:
+            await event.respond("No deleted users found in this group.")
+    else:
+        # Respond if the command is used outside a group (e.g., in private chat)
+        await event.respond("Use this command in a group only.")
+
+
+
 @bot.on(events.NewMessage(incoming=True, func=lambda e: not e.is_private))
 async def handler(event):
-    print(event.is_channel)
     user_entity = await event.get_sender()
 
     group_id = event.chat_id
@@ -247,7 +347,7 @@ async def handler(event):
         return
 
     # Check if the sender is not an admin
-    if not user_permissions.is_admin or not user_permissions.anonymous:
+    if not user_permissions.is_admin and not user_permissions.anonymous and not is_admin(event.sender_id):
         for channel_id in group_data["channels"]:
             try:
                 # Check if the sender is in the channel
@@ -258,7 +358,7 @@ async def handler(event):
 
                 # Get the invite link dynamically
                 invite_link = await bot(ExportChatInviteRequest(channel_id))
-                user_mention = f"[chutiya](tg://user?id={user_id})"
+                user_mention = f"[{user_entity.first_name}](tg://user?id={user_id})"
                 join_button = [[Button.url("Join Channel", invite_link.link)]]
                 await event.respond(
                     f"{user_mention}, You need to join the channel to send messages here.",
